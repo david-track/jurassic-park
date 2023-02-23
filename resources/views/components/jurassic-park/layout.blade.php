@@ -13,18 +13,9 @@
 <body class="bg-black">
     <div class="bg-black min-h-screen">
         <x-jurassic-park.navbar></x-jurassic-park.navbar>
-        <div class="text-white">
-            {{-- This is where main content will be. Perhaps a header, Welcome to Jurassic Park. Needs to be moved to correct
-            file, currently in layout for testing purposes</br> </br> --}}
-            <x-jurassic-park.header></x-jurassic-park.header>
 
-            <div class="flex flex-row justify-center ">
-                <x-jurassic-park.terminal></x-jurassic-park.terminal>
-                <x-jurassic-park.terminal></x-jurassic-park.terminal>
-                <x-jurassic-park.terminal></x-jurassic-park.terminal>
-                <x-jurassic-park.terminal></x-jurassic-park.terminal>
-            </div>
-        </div>
+        @yield('content')
+
     </div>
 </body>
 
