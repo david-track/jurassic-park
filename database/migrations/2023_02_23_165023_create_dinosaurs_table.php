@@ -16,8 +16,9 @@ return new class extends Migration {
             $table->string("alias")->nullable();
             $table->dateTime("date_of_birth");
             $table->boolean("predator_warning");
-            $table->string("digestive_system_id"); //Foreign id,  tabel Herbivore, omni, carni
-            $table->string("chip_id"); // foreign id
+            $table->string("digestive_classification"); // tabel Herbivore, omni, carni
+            // $table->string("chip_id"); // foreign id (has one)
+            // $table->string("health_report_id"); // (has many health reports)
             $table->timestamps();
         });
     }
