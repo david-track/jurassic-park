@@ -14,9 +14,10 @@ return new class extends Migration {
             $table->id();
             $table->string("dinosaur");
             $table->string("alias")->nullable();
-            $table->string("digestive_system"); //afsplitsen? Foreign id, koppel tabel Herbivore, omni, carni
-            $table->string("chip_id"); //afsplitsen foreign id
             $table->dateTime("date_of_birth");
+            $table->boolean("predator_warning");
+            $table->string("digestive_system_id"); //Foreign id,  tabel Herbivore, omni, carni
+            $table->string("chip_id"); // foreign id
             $table->timestamps();
         });
     }
