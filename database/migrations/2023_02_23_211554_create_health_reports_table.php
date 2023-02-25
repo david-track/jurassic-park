@@ -12,6 +12,7 @@ return new class extends Migration {
     {
         Schema::create("health_reports", function (Blueprint $table) {
             $table->id();
+            $table->foreignId("park_dinosaur_id");
             $table->string("report"); //to be extended into more lifelike report
             $table->timestamps();
         });

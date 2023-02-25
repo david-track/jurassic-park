@@ -15,7 +15,7 @@ return new class extends Migration {
             $table->string("dinosaur");
             $table->string("alias")->nullable();
             $table->boolean("predator_warning");
-            $table->string("digestive_classification"); // Herbivore, omni, carni. Enum?
+            $table->string("digestive_system"); // Herbivore, omni, carni. Enum?
             $table->timestamps();
         });
     }

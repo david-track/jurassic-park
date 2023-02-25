@@ -13,7 +13,6 @@ return new class extends Migration {
         Schema::create("paddocks", function (Blueprint $table) {
             $table->id();
             $table->string("name");
-            $table->integer("size_in_square_miles");
             $table->timestamps();
         });
     }
