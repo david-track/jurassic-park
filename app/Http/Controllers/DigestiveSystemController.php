@@ -2,24 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ParkDinosaur;
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\View\View;
-
+use App\Models\DigestiveSystem;
 use Illuminate\Http\Request;
 
-class ParkDinosaurController extends Controller
+class DigestiveSystemController extends Controller
 {
-    public function getAllParkDinosaurs(): Collection
-    {
-        return ParkDinosaur::all();
-    }
-
-    public function testview(): View
-    {
-        $parkDinosaurs = $this->getAllParkDinosaurs();
-        return view("test", compact(["parkDinosaurs"]));
-    }
     /**
      * Display a listing of the resource.
      */
@@ -47,7 +34,7 @@ class ParkDinosaurController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(ParkDinosaur $parkDinosaur)
+    public function show(DigestiveSystem $digestiveSystem)
     {
         //
     }
@@ -55,7 +42,7 @@ class ParkDinosaurController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(ParkDinosaur $parkDinosaur)
+    public function edit(DigestiveSystem $digestiveSystem)
     {
         //
     }
@@ -63,7 +50,7 @@ class ParkDinosaurController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, ParkDinosaur $parkDinosaur)
+    public function update(Request $request, DigestiveSystem $digestiveSystem)
     {
         //
     }
@@ -71,7 +58,7 @@ class ParkDinosaurController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(ParkDinosaur $parkDinosaur)
+    public function destroy(DigestiveSystem $digestiveSystem)
     {
         //
     }

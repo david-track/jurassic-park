@@ -21,7 +21,7 @@ class DinosaurFactory extends Factory
             "dinosaur" => fake()->name(),
             "alias" => fake()->name(),
             "predator_warning" => fake()->boolean(),
-            "digestive_system" => fake()->numberBetween(0, 3),
+            "digestive_system_id" => fake()->numberBetween(1, 3),
         ];
     }
 }

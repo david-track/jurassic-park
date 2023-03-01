@@ -10,12 +10,9 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::create("dinosaurs", function (Blueprint $table) {
+        Schema::create("digestive_systems", function (Blueprint $table) {
             $table->id();
-            $table->string("dinosaur");
-            $table->string("alias")->nullable();
-            $table->boolean("predator_warning");
-            $table->string("digestive_system_id"); // Herbivore, omni, carni. Enum?
+            $table->string("name");
             $table->timestamps();
         });
     }
@@ -25,6 +22,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists("dinosaurs");
+        Schema::dropIfExists("digestive_systems");
     }
 };
