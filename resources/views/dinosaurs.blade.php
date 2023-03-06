@@ -1,5 +1,5 @@
 <x-jurassic-park.layout>
-    @section('content')
-        <div class="text-white">Test</div>
-    @endsection
+
+    <div class="text-white">Test</div>
+
 </x-jurassic-park.layout>
