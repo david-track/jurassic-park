@@ -11,7 +11,7 @@ class terminal extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct(public string $content)
     {
         //
     }
@@ -21,6 +21,6 @@ class terminal extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.jurassic-park.terminal');
+        return view("components.jurassic-park.terminal");
     }
 }

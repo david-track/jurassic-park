@@ -14,7 +14,7 @@
     <div class="bg-black min-h-screen">
         <x-jurassic-park.navbar></x-jurassic-park.navbar>
 
-        @yield('content')
+        {{ $slot }}
 
     </div>
 </body>
