@@ -4,9 +4,8 @@
             {{ __('Dashboard') }}
         </h2>
     </x-slot>
-
-    <div class="text-white">
-        <div class="flex flex-row justify-center ">
+    <div class="text-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-row flex-wrap justify-center ">
             <a href="/dinosaurs">
                 @php
                     $title = 'dino';
@@ -44,7 +43,7 @@
                 </x-jurassic-park.terminal>
             </a>
 
-            {{-- <a href="#">
+            <a href="#">
                 @php
                     $title = 'dino2';
                 @endphp
@@ -71,7 +70,22 @@
                 <x-jurassic-park.terminal :title="$title">
                     <div class="m-1"> test4 </div>
                 </x-jurassic-park.terminal>
-            </a> --}}
+            </a>
+            <a href="#">
+                @php
+                    $title = 'dino4';
+                @endphp
+                <x-jurassic-park.terminal :title="$title">
+                    <div class="m-1"> test4 </div>
+                </x-jurassic-park.terminal>
+            </a><a href="#">
+                @php
+                    $title = 'dino4';
+                @endphp
+                <x-jurassic-park.terminal :title="$title">
+                    <div class="m-1"> test4 </div>
+                </x-jurassic-park.terminal>
+            </a>
         </div>
     </div>
 

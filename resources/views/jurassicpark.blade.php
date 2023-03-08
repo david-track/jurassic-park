@@ -1,12 +1,12 @@
-@php
+{{-- @php
     $title = 'Jurassic Park';
 @endphp
-<x-jurassic-park.layout :title="$title">
+<x-jurassic-park.layout :title="$title"> --}}
+<x-app-layout>
+    <x-jurassic-park.header />
 
-    <x-jurassic-park.header></x-jurassic-park.header>
-
-    <div class="text-white">
-        <div class="flex flex-row justify-center ">
+    <div class="text-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-row flex-wrap justify-center ">
             <a href="/dinosaurs">
                 @php
                     $title = 'dino';
@@ -19,20 +19,18 @@
                             <span class="text-green-500">
                                 online
                             </span></br>
-                            > </br>
                             > Expected Dinosaurs: {{ $parkDinosaursCount }} </br>
                             > Counted Dinosaurs: 292 </br>
-                            > </br>
+
                             > Last count: @php
                             echo now(-1); @endphp
                             </br>
-                            > </br>
+
                             > Fences </br>
                             > Status:
                             <span class="text-green-500">
                                 online
                             </span></br>
-                            > </br>
                             > Paddocks </br>
                             > Status:
                             <span class="text-green-500">
@@ -72,7 +70,24 @@
                     <div class="m-1"> test4 </div>
                 </x-jurassic-park.terminal>
             </a>
+            <a href="#">
+                @php
+                    $title = 'dino5';
+                @endphp
+                <x-jurassic-park.terminal :title="$title">
+                    <div class="m-1"> test5 </div>
+                </x-jurassic-park.terminal>
+            </a>
+            <a href="#">
+                @php
+                    $title = 'dino6';
+                @endphp
+                <x-jurassic-park.terminal :title="$title">
+                    <div class="m-1"> test6 </div>
+                </x-jurassic-park.terminal>
+            </a>
         </div>
     </div>
-
-</x-jurassic-park.layout>
+    {{-- 
+</x-jurassic-park.layout> --}}
+</x-app-layout>
