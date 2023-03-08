@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 //test
 Route::get("/test", [ParkDinosaurController::class, "testview"]);
 
-Route::get("/", [JurassicParkController::class, "home"]);
+Route::get("/", [JurassicParkController::class, "home"])->name("home");
 Route::get("/dinosaurs", [JurassicParkController::class, "dinosaurs"])->name(
     "dinosaurs"
 );

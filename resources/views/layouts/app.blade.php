@@ -31,7 +31,7 @@
 
         <!-- Page Content -->
         <main>
-            <div class="text-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-x border-amber-500 h-screen">
+            <div class="text-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-x border-amber-500 min-h-screen">
                 {{ $slot }}
             </div>
         </main>
