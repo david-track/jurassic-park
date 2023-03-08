@@ -4,7 +4,5 @@
             {{ __('SuperUser') }}
         </h2>
     </x-slot>
-    <div class="text-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-white">Test</div>
-    </div>
+    <div class="">Test</div>
 </x-app-layout>
