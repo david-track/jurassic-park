@@ -5,18 +5,15 @@ namespace App\View\Components\JurassicPark;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
-use App\Http\Controllers\JurassicParkController;
 
-class terminal extends Component
+class application-logo-black extends Component
 {
-    public $title;
-
     /**
      * Create a new component instance.
      */
-    public function __construct(public string $title)
+    public function __construct()
     {
-        $this->title = $title;
+        //
     }
 
     /**
@@ -24,8 +21,6 @@ class terminal extends Component
      */
     public function render(): View|Closure|string
     {
-        return view("components.jurassic-park.terminal", [
-            "$title" => $this->title,
-        ]);
+        return view('components.jurassic-park.application-logo-black');
     }
 }

@@ -5,13 +5,74 @@
         </h2>
     </x-slot>
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    {{ __("You're logged in!") }}
-                </div>
-            </div>
+    <div class="text-white">
+        <div class="flex flex-row justify-center ">
+            <a href="/dinosaurs">
+                @php
+                    $title = 'dino';
+                @endphp
+                <x-jurassic-park.terminal :title="$title">
+
+                    <div class="m-1">
+                        <p>> Dinosaurs </br>
+                            > Status:
+                            <span class="text-green-500">
+                                online
+                            </span></br>
+                            > </br>
+                            > Expected Dinosaurs: 292</br>
+                            > Counted Dinosaurs: 292 </br>
+                            > </br>
+                            > Last count: @php
+                            echo now(-1); @endphp
+                            </br>
+                            > </br>
+                            > Fences </br>
+                            > Status:
+                            <span class="text-green-500">
+                                online
+                            </span></br>
+                            > </br>
+                            > Paddocks </br>
+                            > Status:
+                            <span class="text-green-500">
+                                online
+                            </span></br>
+                        </p>
+                    </div>
+
+                </x-jurassic-park.terminal>
+            </a>
+
+            {{-- <a href="#">
+                @php
+                    $title = 'dino2';
+                @endphp
+                <x-jurassic-park.terminal :title="$title">
+
+                    <div class="m-1"> test2 </div>
+
+                </x-jurassic-park.terminal>
+            </a>
+
+            <a href="#">
+                @php
+                    $title = 'dino3';
+                @endphp
+                <x-jurassic-park.terminal :title="$title">
+                    <div class="m-1"> test3 </div>
+                </x-jurassic-park.terminal>
+            </a>
+
+            <a href="#">
+                @php
+                    $title = 'dino4';
+                @endphp
+                <x-jurassic-park.terminal :title="$title">
+                    <div class="m-1"> test4 </div>
+                </x-jurassic-park.terminal>
+            </a> --}}
         </div>
     </div>
+
 </x-app-layout>

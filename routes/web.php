@@ -20,13 +20,21 @@ use Illuminate\Support\Facades\Route;
 Route::get("/test", [ParkDinosaurController::class, "testview"]);
 
 Route::get("/", [JurassicParkController::class, "home"]);
-Route::get("/dinosaurs", [JurassicParkController::class, "dinosaurs"]);
+Route::get("/dinosaurs", [JurassicParkController::class, "dinosaurs"])->name(
+    "dinosaurs"
+);
 
 Route::get("/dashboard", function () {
     return view("dashboard");
 })
     ->middleware(["auth", "verified"])
     ->name("dashboard");
+
+Route::get("/superuser", function () {
+    return view("superuser");
+})
+    ->middleware(["auth", "verified"])
+    ->name("superuser");
 
 Route::middleware("auth")->group(function () {
     Route::get("/profile", [ProfileController::class, "edit"])->name(

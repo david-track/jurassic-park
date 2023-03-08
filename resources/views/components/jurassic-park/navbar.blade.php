@@ -1,4 +1,9 @@
 <div class="bg-red-700 h-16 m-1">
+    <div class="p-2 mx-1">
+        <a href="">
+            <x-jurassic-park.application-logo-black class="" />
+        </a>
+    </div>
 
     @if (Route::has('login'))
         <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right">
