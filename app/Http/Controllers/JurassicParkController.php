@@ -13,8 +13,8 @@ class JurassicParkController extends Controller
     //
     public function home(): View
     {
-        $parkDinosaursCount = $this->countDinosaurs();
-        return view("jurassicpark", compact(["parkDinosaursCount"]));
+        $parkDinosaursAmount = $this->countDinosaurs();
+        return view("jurassicpark", compact(["parkDinosaursAmount"]));
     }
 
     public function dinosaurs(): View

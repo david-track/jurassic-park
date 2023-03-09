@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\JurassicParkController;
 use App\Http\Controllers\ParkDinosaurController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,9 +25,7 @@ Route::get("/dinosaurs", [JurassicParkController::class, "dinosaurs"])->name(
     "dinosaurs"
 );
 
-Route::get("/dashboard", function () {
-    return view("dashboard");
-})
+Route::get("/dashboard", [DashboardController::class, "home"])
     ->middleware(["auth", "verified"])
     ->name("dashboard");
 

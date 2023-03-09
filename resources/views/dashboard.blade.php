@@ -19,7 +19,7 @@
                             online
                         </span></br>
                         > </br>
-                        > Expected Dinosaurs: 292</br>
+                        > Expected Dinosaurs: {{ $parkDinosaursAmount }} </br>
                         > Counted Dinosaurs: 292 </br>
                         > </br>
                         > Last count: @php
