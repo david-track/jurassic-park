@@ -4,6 +4,6 @@
             {{ __('Dinosaurs') }}
         </h2>
     </x-slot>
-    <div class="">Test</div>
+    <div class="container">Test</div>
 
 </x-app-layout>

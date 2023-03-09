@@ -9,10 +9,9 @@ use Illuminate\View\View;
 class DashboardController extends Controller
 {
     //
-
-    public function countDinosaurs()
-    {
-        $countParkDinosaurs = ParkDinosaur::all()->count();
-        return $countParkDinosaurs;
-    }
+// public function countDinosaurs()
+// {
+//     $countParkDinosaurs = ParkDinosaur::all()->count();
+//     return $countParkDinosaurs;
+// }
 }
