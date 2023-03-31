@@ -21,7 +21,6 @@
                         </span></br>
                         > Expected Dinosaurs: {{ $parkDinosaursAmount }} </br>
                         > Counted Dinosaurs: 292 </br>
-
                         > Last count: @php
                         echo now(-1); @endphp
                         </br>

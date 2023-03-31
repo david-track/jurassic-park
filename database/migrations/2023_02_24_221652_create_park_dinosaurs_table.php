@@ -15,6 +15,7 @@ return new class extends Migration {
             $table->foreignId("dinosaur_id");
             $table->date("date_of_birth");
             $table->foreignId("paddock_id");
+            // $table->foreignId("chip_id");
             $table->foreignId("health_report_id");
             $table->timestamps();
         });
